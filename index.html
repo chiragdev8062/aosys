@@ -12,8 +12,14 @@
 	<!-- Favicon -->
 	<link rel="favicon icon" href="wp-content/uploads/sites/8/2022/12/favicon.png" />
 
-	<script>document.documentElement.className = document.documentElement.className + ' yes-js js_active js'</script>
-	<script>(function (html) { html.className = html.className.replace(/\bno-js\b/, 'js') })(document.documentElement);</script>
+	<script>
+		document.documentElement.className = document.documentElement.className + ' yes-js js_active js'
+	</script>
+	<script>
+		(function (html) {
+			html.className = html.className.replace(/\bno-js\b/, 'js')
+		})(document.documentElement);
+	</script>
 	<title>Aosys</title>
 	<meta name='robots' content='max-image-preview:large' />
 	<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
@@ -22,9 +28,121 @@
 	<link rel="alternate" type="application/rss+xml" title="Home 4 &raquo; Comments Feed"
 		href="comments/feed/index.html" />
 	<script type="text/javascript">
-		window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "https:\/\/medileaves.powersquall.com\/home-4\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.1" } };
+		window._wpemojiSettings = {
+			"baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/",
+			"ext": ".png",
+			"svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/",
+			"svgExt": ".svg",
+			"source": {
+				"concatemoji": "https:\/\/medileaves.powersquall.com\/home-4\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.1"
+			}
+		};
 		/*! This file is auto-generated */
-		!function (i, n) { var o, s, e; function c(e) { try { var t = { supportTests: e, timestamp: (new Date).valueOf() }; sessionStorage.setItem(o, JSON.stringify(t)) } catch (e) { } } function p(e, t, n) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data), r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data)); return t.every(function (e, t) { return e === r[t] }) } function u(e, t, n) { switch (t) { case "flag": return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"); case "emoji": return !n(e, "\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff", "\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff") }return !1 } function f(e, t, n) { var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : i.createElement("canvas"), a = r.getContext("2d", { willReadFrequently: !0 }), o = (a.textBaseline = "top", a.font = "600 32px Arial", {}); return e.forEach(function (e) { o[e] = t(a, e, n) }), o } function t(e) { var t = i.createElement("script"); t.src = e, t.defer = !0, i.head.appendChild(t) } "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag", "emoji"], n.supports = { everything: !0, everythingExceptFlag: !0 }, e = new Promise(function (e) { i.addEventListener("DOMContentLoaded", e, { once: !0 }) }), new Promise(function (t) { var n = function () { try { var e = JSON.parse(sessionStorage.getItem(o)); if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests } catch (e) { } return null }(); if (!n) { if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try { var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));", r = new Blob([e], { type: "text/javascript" }), a = new Worker(URL.createObjectURL(r), { name: "wpTestEmojiSupports" }); return void (a.onmessage = function (e) { c(n = e.data), a.terminate(), t(n) }) } catch (e) { } c(n = f(s, u, p)) } t(n) }).then(function (e) { for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]); n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function () { n.DOMReady = !0 } }).then(function () { return e }).then(function () { var e; n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji))) })) }((window, document), window._wpemojiSettings);
+		! function (i, n) {
+			var o, s, e;
+
+			function c(e) {
+				try {
+					var t = {
+						supportTests: e,
+						timestamp: (new Date).valueOf()
+					};
+					sessionStorage.setItem(o, JSON.stringify(t))
+				} catch (e) {}
+			}
+
+			function p(e, t, n) {
+				e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0);
+				var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data),
+					r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e
+						.getImageData(0, 0, e.canvas.width, e.canvas.height).data));
+				return t.every(function (e, t) {
+					return e === r[t]
+				})
+			}
+
+			function u(e, t, n) {
+				switch (t) {
+					case "flag":
+						return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(
+							e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e,
+							"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
+							"\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"
+							);
+					case "emoji":
+						return !n(e, "\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff",
+							"\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")
+				}
+				return !1
+			}
+
+			function f(e, t, n) {
+				var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(
+						300, 150) : i.createElement("canvas"),
+					a = r.getContext("2d", {
+						willReadFrequently: !0
+					}),
+					o = (a.textBaseline = "top", a.font = "600 32px Arial", {});
+				return e.forEach(function (e) {
+					o[e] = t(a, e, n)
+				}), o
+			}
+
+			function t(e) {
+				var t = i.createElement("script");
+				t.src = e, t.defer = !0, i.head.appendChild(t)
+			}
+			"undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag", "emoji"], n.supports = {
+				everything: !0,
+				everythingExceptFlag: !0
+			}, e = new Promise(function (e) {
+				i.addEventListener("DOMContentLoaded", e, {
+					once: !0
+				})
+			}), new Promise(function (t) {
+				var n = function () {
+					try {
+						var e = JSON.parse(sessionStorage.getItem(o));
+						if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e
+							.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests
+					} catch (e) {}
+					return null
+				}();
+				if (!n) {
+					if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" !=
+						typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try {
+						var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p
+								.toString()
+							].join(",") + "));",
+							r = new Blob([e], {
+								type: "text/javascript"
+							}),
+							a = new Worker(URL.createObjectURL(r), {
+								name: "wpTestEmojiSupports"
+							});
+						return void(a.onmessage = function (e) {
+							c(n = e.data), a.terminate(), t(n)
+						})
+					} catch (e) {}
+					c(n = f(s, u, p))
+				}
+				t(n)
+			}).then(function (e) {
+				for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n
+					.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports
+						.everythingExceptFlag && n.supports[t]);
+				n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n
+					.DOMReady = !1, n.readyCallback = function () {
+						n.DOMReady = !0
+					}
+			}).then(function () {
+				return e
+			}).then(function () {
+				var e;
+				n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) :
+					e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)))
+			}))
+		}((window, document), window._wpemojiSettings);
 	</script>
 	<style type="text/css">
 		img.wp-smiley,
@@ -1606,7 +1724,8 @@
 	<script type="text/javascript">
 		jQuery(document).ready(function ($) {
 
-		});	</script>
+		});
+	</script>
 	<noscript>
 		<style>
 			.woocommerce-product-gallery {
@@ -1618,7 +1737,8 @@
 		content="Elementor 3.14.1; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, a11y_improvements, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
 	<meta name="generator"
 		content="Powered by Slider Revolution 6.6.5 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
-	<script>function setREVStartSize(e) {
+	<script>
+		function setREVStartSize(e) {
 			//window.requestAnimationFrame(function() {
 			window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
 			window.RSIH = window.RSIH === undefined ? window.innerHeight : window.RSIH;
@@ -1637,10 +1757,12 @@
 					newh = Math.max(e.mh, window.RSIH);
 				else {
 					e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
-					for (var i in e.rl) if (e.gw[i] === undefined || e.gw[i] === 0) e.gw[i] = e.gw[i - 1];
+					for (var i in e.rl)
+						if (e.gw[i] === undefined || e.gw[i] === 0) e.gw[i] = e.gw[i - 1];
 					e.gh = e.el === undefined || e.el === "" || (Array.isArray(e.el) && e.el.length == 0) ? e.gh : e.el;
 					e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
-					for (var i in e.rl) if (e.gh[i] === undefined || e.gh[i] === 0) e.gh[i] = e.gh[i - 1];
+					for (var i in e.rl)
+						if (e.gh[i] === undefined || e.gh[i] === 0) e.gh[i] = e.gh[i - 1];
 
 					var nl = new Array(e.rl.length),
 						ix = 0,
@@ -1651,7 +1773,11 @@
 					e.thumbh = e.thumbhide >= pw ? 0 : e.thumbh;
 					for (var i in e.rl) nl[i] = e.rl[i] < window.RSIW ? 0 : e.rl[i];
 					sl = nl[0];
-					for (var i in nl) if (sl > nl[i] && nl[i] > 0) { sl = nl[i]; ix = i; }
+					for (var i in nl)
+						if (sl > nl[i] && nl[i] > 0) {
+							sl = nl[i];
+							ix = i;
+						}
 					var m = pw > (e.gw[ix] + e.tabw + e.thumbw) ? 1 : (pw - (e.tabw + e.thumbw)) / (e.gw[ix]);
 					newh = (e.gh[ix] * m) + (e.tabh + e.thumbh);
 				}
@@ -1666,7 +1792,8 @@
 				console.log("Failure at Presize of Slider:" + e)
 			}
 			//});
-		};</script>
+		};
+	</script>
 	<style id="medileaves_redux-dynamic-css" title="dynamic-css" class="redux-options-output">
 		.page-header .page-header-inner {
 			padding-top: 160px;
@@ -2155,7 +2282,8 @@
 																.elementor-widget-text-editor .elementor-drop-cap-letter {
 																	display: inline-block
 																}
-															</style>Explore our all-encompassing orthopedic implant offerings,
+															</style>Explore our all-encompassing orthopedic implant
+															offerings,
 															tailored to address diverse patient needs. From innovative
 															designs to unwavering quality, we prioritize orthopedic care
 															excellence at every stage. Experience personalized
@@ -2163,7 +2291,7 @@
 															enhancing lives through orthopedic innovation.
 														</div>
 													</div>
-													<!-- <div class="elementor-element elementor-element-969964e elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-medileaves_button"
+													<div class="elementor-element elementor-element-969964e elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-medileaves_button"
 														data-id="969964e" data-element_type="widget"
 														data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:1000}"
 														data-widget_type="medileaves_button.default">
@@ -2172,14 +2300,14 @@
 																<a href="../contact-us/index.html"
 																	class="btn-default default-theme btn-icon style-flat hover-slide-left">
 																	<span class="medileaves-button-inner">
-																		<span class="medileaves-button-text">Contact
-																			Us</span>
+																		<span class="medileaves-button-text">View All
+																			Products</span>
 																	</span>
 																</a>
 															</div>
 														</div>
-													</div> -->
-													<div class="elementor-element elementor-element-6966532 elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-medileaves_button"
+													</div>
+													<!-- <div class="elementor-element elementor-element-6966532 elementor-widget__width-auto elementor-invisible elementor-widget elementor-widget-medileaves_button"
 														data-id="6966532" data-element_type="widget"
 														data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:1100}"
 														data-widget_type="medileaves_button.default">
@@ -2198,7 +2326,7 @@
 																</a>
 															</div>
 														</div>
-													</div>
+													</div> -->
 													<section
 														class="elementor-section elementor-inner-section elementor-element elementor-element-6a82386 margin-right-5 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible"
 														data-id="6a82386" data-element_type="section"
@@ -2218,12 +2346,14 @@
 																				<div class="counter-info">
 																					<h2 class="number">
 																						<span class="timer"
-																							data-from="1000" data-to="7000"
+																							data-from="1000"
+																							data-to="7000"
 																							data-speed="2000"
 																							data-refresh-interval="6">0</span>
 																						<span class="suffix">+</span>
 																					</h2>
-																					<div class="counter-text">Products</div>
+																					<div class="counter-text">Products
+																					</div>
 																				</div>
 																			</div>
 																		</div>
@@ -2249,7 +2379,8 @@
 																							data-refresh-interval="6">0</span>
 																						<span class="suffix">+</span>
 																					</h2>
-																					<div class="counter-text">Clients</div>
+																					<div class="counter-text">Clients
+																					</div>
 																				</div>
 																			</div>
 																		</div>
@@ -2300,6 +2431,7 @@
 							</div>
 						</div>
 					</section>
+
 
 					<!-- Company colabration section-->
 					<section
@@ -2413,6 +2545,8 @@
 							</div>
 						</div>
 					</section>
+
+
 
 					<!-- About us section -->
 					<!-- <section
@@ -2605,8 +2739,11 @@
 														data-id="9cb307e" data-element_type="widget"
 														data-widget_type="text-editor.default">
 														<div class="elementor-widget-container">
-															<p>Orthopaedics is in our core, deeply ingrained in our expertise. 
-															Our primary commitment is to anticipate your requirements by delivering innovative products and services. 
+															<p>Orthopaedics is in our core, deeply ingrained in our
+																expertise.
+																Our primary commitment is to anticipate your
+																requirements by delivering innovative products and
+																services.
 															</p>
 														</div>
 													</div>
@@ -2629,16 +2766,16 @@
 																<div class="services-box-inner">
 																	<div class="services-box-img">
 																		<div class="services-img"><img decoding="async"
-																				src="2023/Image01.jpg"
-																				title="blog-01" alt="blog-01"
-																				loading="lazy" /></div>
+																				src="2023/Image01.jpg" title="blog-01"
+																				alt="blog-01" loading="lazy" /></div>
 																		<!-- <span class="services-box-icon"><i
 																				aria-hidden="true"
 																				class="glyph-icon flaticon-doctor"></i></span> -->
 																	</div>
 																	<div class="services-box-info">
 																		<div class="services-info-inner">
-																			<h6 class="services-box-title">New Product 1</h6>
+																			<h6 class="services-box-title">New Product 1
+																			</h6>
 																			<div class="services-box-content">Lorem
 																				Ipsum is simply dummy text of the
 																				printing and typesetting industry.</div>
@@ -2662,16 +2799,16 @@
 																<div class="services-box-inner">
 																	<div class="services-box-img">
 																		<div class="services-img"><img decoding="async"
-																			src="2023/Image02.jpg"
-																				title="blog-02" alt="blog-02"
-																				loading="lazy" /></div>
+																				src="2023/Image02.jpg" title="blog-02"
+																				alt="blog-02" loading="lazy" /></div>
 																		<!-- <span class="services-box-icon"><i
 																				aria-hidden="true"
 																				class="glyph-icon flaticon-health-insurance-1"></i></span> -->
 																	</div>
 																	<div class="services-box-info">
 																		<div class="services-info-inner">
-																			<h6 class="services-box-title">New Product 2</h6>
+																			<h6 class="services-box-title">New Product 2
+																			</h6>
 																			<div class="services-box-content">Lorem
 																				Ipsum is simply dummy text of the
 																				printing and typesetting industry.</div>
@@ -2695,16 +2832,16 @@
 																<div class="services-box-inner">
 																	<div class="services-box-img">
 																		<div class="services-img"><img decoding="async"
-																			src="2023/Image03.jpg"
-																				title="blog-03" alt="blog-03"
-																				loading="lazy" /></div>
+																				src="2023/Image03.jpg" title="blog-03"
+																				alt="blog-03" loading="lazy" /></div>
 																		<!-- <span class="services-box-icon"><i
 																				aria-hidden="true"
 																				class="glyph-icon flaticon-online"></i></span> -->
 																	</div>
 																	<div class="services-box-info">
 																		<div class="services-info-inner">
-																			<h6 class="services-box-title">New Product 3</h6>
+																			<h6 class="services-box-title">New Product 3
+																			</h6>
 																			<div class="services-box-content">Lorem
 																				Ipsum is simply dummy text of the
 																				printing and typesetting industry.</div>
@@ -2743,8 +2880,8 @@
 										data-widget_type="medileaves_video.default">
 										<div class="elementor-widget-container">
 											<div class="video-box">
-												<div class="style-flat pulse-effect-active">
-													<a href="#" target="youtube_video"
+												<div class="style-flat video-image pulse-effect-active">
+													<a href="https://www.youtube.com/watch?v=TklNuYgvzE0"
 														class="video-button popup-vimeo" title="Video">
 														<i class="ion ion-play"></i> </a>
 												</div>
@@ -2753,15 +2890,7 @@
 									</div>
 								</div>
 							</div>
-						</div>
 					</section>
-
-					<!-- <iframe class="elementor-video" frameborder="0" allowfullscreen="1" name="youtube_video"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						title="Aosys Trauma Products" width="640" height="360"
-						src="https://www.youtube-nocookie.com/embed/TklNuYgvzE0?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Faosys.in&amp;widgetid=1"
-						id="widget2"></iframe> -->
-
 
 					<section
 						class="elementor-section elementor-top-section elementor-element elementor-element-96b9f65 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
@@ -2792,7 +2921,9 @@
 														data-id="14d179f" data-element_type="widget"
 														data-widget_type="text-editor.default">
 														<div class="elementor-widget-container">
-															<p>We excel at foreseeing your requirements, providing cutting-edge products and services that enable us to shape the future collaboratively.</p>
+															<p>We excel at foreseeing your requirements, providing
+																cutting-edge products and services that enable us to
+																shape the future collaboratively.</p>
 														</div>
 													</div>
 												</div>
@@ -2851,7 +2982,7 @@
 																<div class="feature-info">
 																	<h6 class="title">Spine</h6>
 																	<p>Small Description
-																	</p>>
+																	</p>
 																</div>
 															</div>
 														</div>
@@ -2956,9 +3087,12 @@
 										data-id="60874b2" data-element_type="widget"
 										data-widget_type="text-editor.default">
 										<div class="elementor-widget-container">
-											The AOSYS Art Foundation for Surgeons, a segment of our organization, is dedicated to research and education. 
-											We have a particular focus on advancing surgical treatments for trauma, spine, and musculoskeletal disorders through ongoing innovation. 
-											As a medical guidance resource and a nonprofit entity, our goal at AOSYS is to establish a worldwide community of surgeons and ultimately 
+											The AOSYS Art Foundation for Surgeons, a segment of our organization, is
+											dedicated to research and education.
+											We have a particular focus on advancing surgical treatments for trauma,
+											spine, and musculoskeletal disorders through ongoing innovation.
+											As a medical guidance resource and a nonprofit entity, our goal at AOSYS is
+											to establish a worldwide community of surgeons and ultimately
 											become the foremost educational platform in the field..
 										</div>
 									</div>
@@ -2978,7 +3112,7 @@
 												<div class="fuature-inner">
 													<div class="feature-box">
 														<div class="feature-info">
-															<h6 class="title">Surgeon&#039;s Satisfactions</h6>
+															<h6 class="title">Surgeon&#039;s Satisfaction</h6>
 															<p>Lorem Ipsum is simply dummy text of the printing and
 																typesetting industry.</p>
 														</div>
@@ -3093,8 +3227,9 @@
 										data-id="48bfa4d" data-element_type="widget"
 										data-widget_type="text-editor.default">
 										<div class="elementor-widget-container">
-											<p>Feel free to reach out to us for a quotation, assistance, or to explore opportunities to join our team.
-												</p>
+											<p>Feel free to reach out to us for a quotation, assistance, or to explore
+												opportunities to join our team.
+											</p>
 										</div>
 									</div>
 									<div class="elementor-element elementor-element-567b049 elementor-widget elementor-widget-info_box"
@@ -3107,7 +3242,7 @@
 												<div class="feature-info">
 													<h6 class="title">Plot No : 66 & 67, Shreeji Charan Industrial Park,
 														Opp KP Kanta Bakrol Road, Indore Highway, Kujad Bakrol, Taluka
-														Daskroi - 382430</h6>
+														Daskroi 382430</h6>
 												</div>
 											</div>
 										</div>
@@ -3365,155 +3500,205 @@
 
 					<style>
 						.emptySpace {
-						   height: 100px;
-						   width: 100px;
+							height: 100px;
+							width: 100px;
 						}
-					 </style>
+					</style>
 
 
 					<div class="emptySpace"></div>
 
 
 
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-9abe93f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9abe93f" data-element_type="section">
-							<div class="elementor-background-overlay"></div>
-							<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f7c6c31" data-id="f7c6c31" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-e18c2d1 elementor-widget elementor-widget-section_title" data-id="e18c2d1" data-element_type="widget" data-widget_type="section_title.default">
-				<div class="elementor-widget-container">
-					<div class="sub_title-1 section-title text-center">
-						<span class="title-tagline">Our Testimonials</span>
-						<h2 class="main-title">What Our Client Happy Say!</h2>
-					</div>
-			</div>
-				</div>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-117d127 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="117d127" data-element_type="section">
+					<section
+						class="elementor-section elementor-top-section elementor-element elementor-element-9abe93f elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+						data-id="9abe93f" data-element_type="section">
+						<div class="elementor-background-overlay"></div>
 						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-9e5e6dc" data-id="9e5e6dc" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-5a4633a elementor-widget elementor-widget-text-editor" data-id="5a4633a" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<!-- <p>Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. Donec pulvinar tellus egetmagna aliquet ultricies. nec eleifend sem convallis vitae.</p>						</div> -->
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<div class="elementor-element elementor-element-ab6280d elementor-widget elementor-widget-Testimonial" data-id="ab6280d" data-element_type="widget" data-widget_type="Testimonial.default">
-				<div class="elementor-widget-container">
-					<div class="testimonial-main testimonial-style-3 arrow-default position-default ">
-			<div class="testimonial-slider swiper-container" data-items="3" data-lg-items="3" data-md-items="2" data-sm-items="1" data-xs-items="1" data-space="30" data-arrow="true" data-bullets="false" data-autoplay="true" data-loop="true">
-				<div class="swiper-wrapper">
-										<div class="swiper-slide">
-							<div class="testimonial-inner star-5">
-								<div class="icon-quote"><i class="ion ion-quote"></i></div>
-									<div class="author-description">
-										<div class="author-rating">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
+							<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f7c6c31"
+								data-id="f7c6c31" data-element_type="column">
+								<div class="elementor-widget-wrap elementor-element-populated">
+									<div class="elementor-element elementor-element-e18c2d1 elementor-widget elementor-widget-section_title"
+										data-id="e18c2d1" data-element_type="widget"
+										data-widget_type="section_title.default">
+										<div class="elementor-widget-container">
+											<div class="sub_title-1 section-title text-center">
+												<span class="title-tagline">Our Testimonials</span>
+												<h2 class="main-title">What Our Patients Say!</h2>
+											</div>
 										</div>
-										<div class="author-content"><p>This orthopedic implant for trauma victims is nothing short of miraculous. It's a crucial component in restoring mobility and quality of life after a traumatic injury.</p>
-</div>
 									</div>
-									<div class="author-details">
-										<div class="author-photo"><img decoding="async" class="img-fluid rounded-circle" src="wp-content/uploads/sites/8/2020/10/our-team-01.jpg" alt=""></div>
-										<div class="author-info">
-										<h5 class="author-name">Suresh</h5>
-																				<span class="author-position">Patient</span>
-																			</div>
+									<section
+										class="elementor-section elementor-inner-section elementor-element elementor-element-117d127 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+										data-id="117d127" data-element_type="section">
+										<div class="elementor-container elementor-column-gap-default">
+											<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-9e5e6dc"
+												data-id="9e5e6dc" data-element_type="column">
+												<div class="elementor-widget-wrap elementor-element-populated">
+													<div class="elementor-element elementor-element-5a4633a elementor-widget elementor-widget-text-editor"
+														data-id="5a4633a" data-element_type="widget"
+														data-widget_type="text-editor.default">
+														<div class="elementor-widget-container">
+															<!-- <p>Sed sagittis sodales lobortis. Curabitur in eleifend turpis, id vehicula odio. Donec pulvinar tellus egetmagna aliquet ultricies. nec eleifend sem convallis vitae.</p>						</div> -->
+														</div>
+													</div>
+												</div>
+											</div>
+									</section>
+									<div class="elementor-element elementor-element-ab6280d elementor-widget elementor-widget-Testimonial"
+										data-id="ab6280d" data-element_type="widget"
+										data-widget_type="Testimonial.default">
+										<div class="elementor-widget-container">
+											<div
+												class="testimonial-main testimonial-style-3 arrow-default position-default ">
+												<div class="testimonial-slider swiper-container" data-items="3"
+													data-lg-items="3" data-md-items="2" data-sm-items="1"
+													data-xs-items="1" data-space="30" data-arrow="true"
+													data-bullets="false" data-autoplay="true" data-loop="true">
+													<div class="swiper-wrapper">
+														<div class="swiper-slide">
+															<div class="testimonial-inner star-5">
+																<div class="icon-quote"><i class="ion ion-quote"></i>
+																</div>
+																<div class="author-description">
+																	<div class="author-rating">
+																		<i class="fa fa-star"></i>
+																		<i class="fa fa-star"></i>
+																		<i class="fa fa-star"></i>
+																		<i class="fa fa-star"></i>
+																		<i class="fa fa-star"></i>
+																	</div>
+																	<div class="author-content">
+																		<p>This orthopedic implant for trauma victims is
+																			nothing short of miraculous. It's a crucial
+																			component in restoring mobility and quality
+																			of life after a traumatic injury.</p>
+																	</div>
+																</div>
+																<div class="author-details">
+																	<div class="author-photo"><img decoding="async"
+																			class="img-fluid rounded-circle"
+																			src="wp-content/uploads/sites/8/2020/10/our-team-01.jpg"
+																			alt=""></div>
+																	<div class="author-info">
+																		<h5 class="author-name">Suresh</h5>
+																		<span class="author-position">Patient</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="swiper-slide">
+															<div class="testimonial-inner star-4">
+																<div class="icon-quote"><i class="ion ion-quote"></i>
+																</div>
+																<div class="author-description">
+																	<div class="author-rating">
+																		<i class="fa fa-star"></i>
+																		<i class="fa fa-star"></i>
+																		<i class="fa fa-star"></i>
+																		<i class="fa fa-star"></i>
+																		<i class="fa fa-star"></i>
+																	</div>
+																	<div class="author-content">
+																		<p>This orthopedic implant is a true beacon of
+																			hope for trauma survivors like myself. It's
+																			the key to regaining normalcy and mobility
+																			after life-altering injuries.</p>
+																	</div>
+																</div>
+																<div class="author-details">
+																	<div class="author-photo"><img decoding="async"
+																			class="img-fluid rounded-circle"
+																			src="wp-content/uploads/sites/8/2020/10/our-team-05.jpg"
+																			alt=""></div>
+																	<div class="author-info">
+																		<h5 class="author-name">Laxmi</h5>
+																		<span class="author-position">Doctor</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="swiper-slide">
+															<div class="testimonial-inner star-5">
+																<div class="icon-quote"><i class="ion ion-quote"></i>
+																</div>
+																<div class="author-description">
+																	<div class="author-rating">
+																		<i class="fa fa-star"></i>
+																		<i class="fa fa-star"></i>
+																		<i class="fa fa-star"></i>
+																		<i class="fa fa-star"></i>
+																		<i class="fa fa-star"></i>
+																	</div>
+																	<div class="author-content">
+																		<p>For individuals like myself who have
+																			experienced traumatic injuries, this
+																			orthopedic implant serves as a genuine
+																			source of optimism. </p>
+																	</div>
+																</div>
+																<div class="author-details">
+																	<div class="author-photo"><img decoding="async"
+																			class="img-fluid rounded-circle"
+																			src="wp-content/uploads/sites/8/2020/08/our-team-07.jpg"
+																			alt=""></div>
+																	<div class="author-info">
+																		<h5 class="author-name">Riya</h5>
+																		<span class="author-position">Patient</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="swiper-slide">
+															<div class="testimonial-inner star-4">
+																<div class="icon-quote"><i class="ion ion-quote"></i>
+																</div>
+																<div class="author-description">
+																	<div class="author-rating">
+																		<i class="fa fa-star"></i>
+																		<i class="fa fa-star"></i>
+																		<i class="fa fa-star"></i>
+																		<i class="fa fa-star"></i>
+																		<i class="fa fa-star"></i>
+																	</div>
+																	<div class="author-content">
+																		<p>This is the text content for the testimonial.
+																			So this can be randomized everytime.This is
+																			the text content for the testimonial. So
+																			this can be randomized everytime.</p>
+																	</div>
+																</div>
+																<div class="author-details">
+																	<div class="author-photo"><img decoding="async"
+																			class="img-fluid rounded-circle"
+																			src="wp-content/uploads/sites/8/2020/08/our-team-04.jpg"
+																			alt=""></div>
+																	<div class="author-info">
+																		<h5 class="author-name">John</h5>
+																		<span class="author-position">Doctor</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="swiper-pagination"></div>
+													<div class="swiper-button-next"><i class="fas fa-chevron-right"></i>
+													</div>
+													<div class="swiper-button-prev"><i class="fas fa-chevron-left"></i>
+													</div>
+
+												</div>
+											</div>
+
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-												<div class="swiper-slide">
-							<div class="testimonial-inner star-4">
-								<div class="icon-quote"><i class="ion ion-quote"></i></div>
-									<div class="author-description">
-										<div class="author-rating">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-										</div>
-										<div class="author-content"><p>This orthopedic implant is a true beacon of hope for trauma survivors like myself. It's the key to regaining normalcy and mobility after life-altering injuries.</p>
-</div>
-									</div>
-									<div class="author-details">
-										<div class="author-photo"><img decoding="async" class="img-fluid rounded-circle" src="wp-content/uploads/sites/8/2020/10/our-team-05.jpg" alt=""></div>
-										<div class="author-info">
-										<h5 class="author-name">Laxmi</h5>
-																				<span class="author-position">Doctor</span>
-																			</div>
-								</div>
-							</div>
-						</div>
-												<div class="swiper-slide">
-							<div class="testimonial-inner star-5">
-								<div class="icon-quote"><i class="ion ion-quote"></i></div>
-									<div class="author-description">
-										<div class="author-rating">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-										</div>
-										<div class="author-content"><p>For individuals like myself who have experienced traumatic injuries, this orthopedic implant serves as a genuine source of optimism. </p>
-</div>
-									</div>
-									<div class="author-details">
-										<div class="author-photo"><img decoding="async" class="img-fluid rounded-circle" src="wp-content/uploads/sites/8/2020/08/our-team-07.jpg" alt=""></div>
-										<div class="author-info">
-										<h5 class="author-name">Mahesh</h5>
-																				<span class="author-position">Patient</span>
-																			</div>
-								</div>
-							</div>
-						</div>
-												<div class="swiper-slide">
-							<div class="testimonial-inner star-4">
-								<div class="icon-quote"><i class="ion ion-quote"></i></div>
-									<div class="author-description">
-										<div class="author-rating">
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-										</div>
-										<div class="author-content"><p>This is the text content for the testimonial. So this can be randomized everytime.This is the text content for the testimonial. So this can be randomized everytime.</p>
-</div>
-									</div>
-									<div class="author-details">
-										<div class="author-photo"><img decoding="async" class="img-fluid rounded-circle" src="wp-content/uploads/sites/8/2020/08/our-team-04.jpg" alt=""></div>
-										<div class="author-info">
-										<h5 class="author-name">John Doe</h5>
-																				<span class="author-position">Project Manager</span>
-																			</div>
-								</div>
-							</div>
-						</div>
-										</div>
+					</section>
 
-				<div class="swiper-pagination"></div>
-				<div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
-				<div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
-
-			</div>
-		</div>
-
-				</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-
-		<div class="emptySpace"></div>
+					<div class="emptySpace"></div>
 
 					<!-- Blog section -->
 					<!-- <section
@@ -4013,7 +4198,8 @@
 									sizes="100vw" /></div>
 							<div id="text-1" class="widget widget_text text-left">
 								<div class="textwidget">
-									<p>Our vision is to emerge as a top innovator in the field of Orthopedic solutions, delivering high-quality products that are accessible to everyone.</p>
+									<p>Our vision is to emerge as a top innovator in the field of Orthopedic solutions,
+										delivering high-quality products that are accessible to everyone.</p>
 								</div>
 							</div>
 							<div id="social_media-1" class="widget widget_social_media text-left">
@@ -4075,7 +4261,7 @@
 										<li>
 											<i class="fas fa-map-marker-alt"></i>
 											<span>Plot No : 66 & 67, Shreeji Charan Industrial Park, Opp KP Kanta Bakrol
-												Road, Indore Highway, Kujad Bakrol, Taluka Daskroi - 382430</span>
+												Road, Indore Highway, Kujad Bakrol, Taluka Daskroi 382430</span>
 										</li>
 										<li>
 											<i class="far fa-envelope"></i>
@@ -4102,22 +4288,22 @@
 									offers.</div>
 
 								<div class="newsletter-form style-3 color-theme-second">
-									<script>(function () {
+									<script>
+										(function () {
 											window.mc4wp = window.mc4wp || {
 												listeners: [],
 												forms: {
 													on: function (evt, cb) {
-														window.mc4wp.listeners.push(
-															{
-																event: evt,
-																callback: cb
-															}
-														);
+														window.mc4wp.listeners.push({
+															event: evt,
+															callback: cb
+														});
 													}
 												}
 											}
 										})();
-									</script><!-- Mailchimp for WordPress v4.9.6 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
+									</script>
+									<!-- Mailchimp for WordPress v4.9.6 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
 									<form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-75" method="post" data-id="75"
 										data-name="Newsletter Form">
 										<div class="mc4wp-form-fields">
@@ -4240,7 +4426,8 @@
 							sizes="100vw" /></a></div>
 				<div id="text-3" class="widget widget_text">
 					<div class="textwidget">
-						<p>Our vision is to emerge as a top innovator in the field of Orthopedic solutions, delivering high-quality products that are accessible to everyone.</p>
+						<p>Our vision is to emerge as a top innovator in the field of Orthopedic solutions, delivering
+							high-quality products that are accessible to everyone.</p>
 					</div>
 				</div>
 				<div id="custom_html-1" class="widget_text widget widget_custom_html">
@@ -4249,7 +4436,7 @@
 							<div class="theme-info-list">
 								<h4>We are here</h4>
 								<span>Plot No : 66 & 67, Shreeji Charan Industrial Park, Opp KP Kanta Bakrol Road,
-									Indore Highway, Kujad Bakrol, Taluka Daskroi - 382430</span>
+									Indore Highway, Kujad Bakrol, Taluka Daskroi 382430</span>
 							</div>
 							<div class="theme-info-list">
 								<h4>Contact us</h4>
@@ -4290,7 +4477,8 @@
 		window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
 		window.RS_MODULES.type = 'compiled';
 	</script>
-	<script>(function () {
+	<script>
+		(function () {
 			function maybePrefixUrlField() {
 				const value = this.value.trim()
 				if (value !== '' && value.indexOf('http') !== 0) {
@@ -4302,11 +4490,13 @@
 			for (let j = 0; j < urlFields.length; j++) {
 				urlFields[j].addEventListener('blur', maybePrefixUrlField)
 			}
-		})();</script>
+		})();
+	</script>
 	<script type="text/javascript">
 		jQuery(document).ready(function ($) {
 
-		});	</script>
+		});
+	</script>
 	<script type="text/javascript">
 		(function () {
 			var c = document.body.className;
@@ -4330,7 +4520,47 @@
 		id='prettyPhoto-js'></script>
 	<script type='text/javascript' id='jquery-yith-wcwl-js-extra'>
 		/* <![CDATA[ */
-		var yith_wcwl_l10n = { "ajax_url": "\/home-4\/wp-admin\/admin-ajax.php", "redirect_to_cart": "no", "yith_wcwl_button_position": "after_add_to_cart", "multi_wishlist": "", "hide_add_button": "1", "enable_ajax_loading": "", "ajax_loader_url": "https:\/\/medileaves.powersquall.com\/home-4\/wp-content\/plugins\/yith-woocommerce-wishlist\/assets\/images\/ajax-loader-alt.svg", "remove_from_wishlist_after_add_to_cart": "1", "is_wishlist_responsive": "1", "time_to_close_prettyphoto": "3000", "fragments_index_glue": ".", "reload_on_found_variation": "1", "mobile_media_query": "768", "labels": { "cookie_disabled": "We are sorry, but this feature is available only if cookies on your browser are enabled.", "added_to_cart_message": "<div class=\"woocommerce-notices-wrapper\"><div class=\"woocommerce-message\" role=\"alert\">Product added to cart successfully<\/div><\/div>" }, "actions": { "add_to_wishlist_action": "add_to_wishlist", "remove_from_wishlist_action": "remove_from_wishlist", "reload_wishlist_and_adding_elem_action": "reload_wishlist_and_adding_elem", "load_mobile_action": "load_mobile", "delete_item_action": "delete_item", "save_title_action": "save_title", "save_privacy_action": "save_privacy", "load_fragments": "load_fragments" }, "nonce": { "add_to_wishlist_nonce": "9ee5ed39b3", "remove_from_wishlist_nonce": "aa83c827b5", "reload_wishlist_and_adding_elem_nonce": "230dc49bd1", "load_mobile_nonce": "4d17615012", "delete_item_nonce": "3c5ce7026b", "save_title_nonce": "2271570205", "save_privacy_nonce": "f9f7c406a3", "load_fragments_nonce": "293c5fae75" }, "redirect_after_ask_estimate": "", "ask_estimate_redirect_url": "https:\/\/medileaves.powersquall.com\/home-4" };
+		var yith_wcwl_l10n = {
+			"ajax_url": "\/home-4\/wp-admin\/admin-ajax.php",
+			"redirect_to_cart": "no",
+			"yith_wcwl_button_position": "after_add_to_cart",
+			"multi_wishlist": "",
+			"hide_add_button": "1",
+			"enable_ajax_loading": "",
+			"ajax_loader_url": "https:\/\/medileaves.powersquall.com\/home-4\/wp-content\/plugins\/yith-woocommerce-wishlist\/assets\/images\/ajax-loader-alt.svg",
+			"remove_from_wishlist_after_add_to_cart": "1",
+			"is_wishlist_responsive": "1",
+			"time_to_close_prettyphoto": "3000",
+			"fragments_index_glue": ".",
+			"reload_on_found_variation": "1",
+			"mobile_media_query": "768",
+			"labels": {
+				"cookie_disabled": "We are sorry, but this feature is available only if cookies on your browser are enabled.",
+				"added_to_cart_message": "<div class=\"woocommerce-notices-wrapper\"><div class=\"woocommerce-message\" role=\"alert\">Product added to cart successfully<\/div><\/div>"
+			},
+			"actions": {
+				"add_to_wishlist_action": "add_to_wishlist",
+				"remove_from_wishlist_action": "remove_from_wishlist",
+				"reload_wishlist_and_adding_elem_action": "reload_wishlist_and_adding_elem",
+				"load_mobile_action": "load_mobile",
+				"delete_item_action": "delete_item",
+				"save_title_action": "save_title",
+				"save_privacy_action": "save_privacy",
+				"load_fragments": "load_fragments"
+			},
+			"nonce": {
+				"add_to_wishlist_nonce": "9ee5ed39b3",
+				"remove_from_wishlist_nonce": "aa83c827b5",
+				"reload_wishlist_and_adding_elem_nonce": "230dc49bd1",
+				"load_mobile_nonce": "4d17615012",
+				"delete_item_nonce": "3c5ce7026b",
+				"save_title_nonce": "2271570205",
+				"save_privacy_nonce": "f9f7c406a3",
+				"load_fragments_nonce": "293c5fae75"
+			},
+			"redirect_after_ask_estimate": "",
+			"ask_estimate_redirect_url": "https:\/\/medileaves.powersquall.com\/home-4"
+		};
 		/* ]]> */
 	</script>
 	<script type='text/javascript'
@@ -4341,28 +4571,43 @@
 		id='jquery-blockui-js'></script>
 	<script type='text/javascript' id='wc-add-to-cart-js-extra'>
 		/* <![CDATA[ */
-		var wc_add_to_cart_params = { "ajax_url": "\/home-4\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/home-4\/?wc-ajax=%%endpoint%%", "i18n_view_cart": "View cart", "cart_url": "https:\/\/medileaves.powersquall.com\/home-4\/cart\/", "is_cart": "", "cart_redirect_after_add": "no" };
+		var wc_add_to_cart_params = {
+			"ajax_url": "\/home-4\/wp-admin\/admin-ajax.php",
+			"wc_ajax_url": "\/home-4\/?wc-ajax=%%endpoint%%",
+			"i18n_view_cart": "View cart",
+			"cart_url": "https:\/\/medileaves.powersquall.com\/home-4\/cart\/",
+			"is_cart": "",
+			"cart_redirect_after_add": "no"
+		};
 		/* ]]> */
 	</script>
 	<script type='text/javascript'
-		src='wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min5125.js?ver=7.9.0'
-		id='wc-add-to-cart-js'></script>
+		src='wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min5125.js?ver=7.9.0' id='wc-add-to-cart-js'>
+	</script>
 	<script type='text/javascript'
 		src='wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min03f8.js?ver=2.1.4-wc.7.9.0'
 		id='js-cookie-js'></script>
 	<script type='text/javascript' id='woocommerce-js-extra'>
 		/* <![CDATA[ */
-		var woocommerce_params = { "ajax_url": "\/home-4\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/home-4\/?wc-ajax=%%endpoint%%" };
+		var woocommerce_params = {
+			"ajax_url": "\/home-4\/wp-admin\/admin-ajax.php",
+			"wc_ajax_url": "\/home-4\/?wc-ajax=%%endpoint%%"
+		};
 		/* ]]> */
 	</script>
 	<script type='text/javascript'
-		src='wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min5125.js?ver=7.9.0'
-		id='woocommerce-js'></script>
+		src='wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min5125.js?ver=7.9.0' id='woocommerce-js'>
+	</script>
 	<script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/swv/js/indexf2b4.js?ver=5.7.7'
 		id='swv-js'></script>
 	<script type='text/javascript' id='contact-form-7-js-extra'>
 		/* <![CDATA[ */
-		var wpcf7 = { "api": { "root": "https:\/\/medileaves.powersquall.com\/home-4\/wp-json\/", "namespace": "contact-form-7\/v1" } };
+		var wpcf7 = {
+			"api": {
+				"root": "https:\/\/medileaves.powersquall.com\/home-4\/wp-json\/",
+				"namespace": "contact-form-7\/v1"
+			}
+		};
 		/* ]]> */
 	</script>
 	<script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/indexf2b4.js?ver=5.7.7'
@@ -4373,7 +4618,9 @@
 		async id='revmin-js'></script>
 	<script type='text/javascript' id='medileaves-skip-link-focus-fix-js-extra'>
 		/* <![CDATA[ */
-		var medileavesScreenReaderText = { "quote": null };
+		var medileavesScreenReaderText = {
+			"quote": null
+		};
 		/* ]]> */
 	</script>
 	<script type='text/javascript' src='wp-content/themes/medileaves/assets/js/skip-link-focus-fix5152.js?ver=1.0'
@@ -4421,10 +4668,126 @@
 	<script type='text/javascript'
 		src='wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2'
 		id='elementor-waypoints-js'></script>
-	<script type='text/javascript' src='wp-includes/js/jquery/ui/core.min3f14.js?ver=1.13.2'
-		id='jquery-ui-core-js'></script>
+	<script type='text/javascript' src='wp-includes/js/jquery/ui/core.min3f14.js?ver=1.13.2' id='jquery-ui-core-js'>
+	</script>
 	<script id="elementor-frontend-js-before" type="text/javascript">
-		var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close", "a11yCarouselWrapperAriaLabel": "Carousel | Horizontal scrolling: Arrow Left & Right", "a11yCarouselPrevSlideMessage": "Previous slide", "a11yCarouselNextSlideMessage": "Next slide", "a11yCarouselFirstSlideMessage": "This is the first slide", "a11yCarouselLastSlideMessage": "This is the last slide", "a11yCarouselPaginationBulletMessage": "Go to slide" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile Portrait", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Landscape", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet Portrait", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Landscape", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } } }, "version": "3.14.1", "is_static": false, "experimentalFeatures": { "e_dom_optimization": true, "e_optimized_assets_loading": true, "e_optimized_css_loading": true, "a11y_improvements": true, "additional_custom_breakpoints": true, "e_swiper_latest": true, "landing-pages": true }, "urls": { "assets": "https:\/\/medileaves.powersquall.com\/home-4\/wp-content\/plugins\/elementor\/assets\/" }, "swiperClass": "swiper", "settings": { "page": [], "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 6632, "title": "Home%204", "excerpt": "", "featuredImage": false } };
+		var elementorFrontendConfig = {
+			"environmentMode": {
+				"edit": false,
+				"wpPreview": false,
+				"isScriptDebug": false
+			},
+			"i18n": {
+				"shareOnFacebook": "Share on Facebook",
+				"shareOnTwitter": "Share on Twitter",
+				"pinIt": "Pin it",
+				"download": "Download",
+				"downloadImage": "Download image",
+				"fullscreen": "Fullscreen",
+				"zoom": "Zoom",
+				"share": "Share",
+				"playVideo": "Play Video",
+				"previous": "Previous",
+				"next": "Next",
+				"close": "Close",
+				"a11yCarouselWrapperAriaLabel": "Carousel | Horizontal scrolling: Arrow Left & Right",
+				"a11yCarouselPrevSlideMessage": "Previous slide",
+				"a11yCarouselNextSlideMessage": "Next slide",
+				"a11yCarouselFirstSlideMessage": "This is the first slide",
+				"a11yCarouselLastSlideMessage": "This is the last slide",
+				"a11yCarouselPaginationBulletMessage": "Go to slide"
+			},
+			"is_rtl": false,
+			"breakpoints": {
+				"xs": 0,
+				"sm": 480,
+				"md": 768,
+				"lg": 1025,
+				"xl": 1440,
+				"xxl": 1600
+			},
+			"responsive": {
+				"breakpoints": {
+					"mobile": {
+						"label": "Mobile Portrait",
+						"value": 767,
+						"default_value": 767,
+						"direction": "max",
+						"is_enabled": true
+					},
+					"mobile_extra": {
+						"label": "Mobile Landscape",
+						"value": 880,
+						"default_value": 880,
+						"direction": "max",
+						"is_enabled": false
+					},
+					"tablet": {
+						"label": "Tablet Portrait",
+						"value": 1024,
+						"default_value": 1024,
+						"direction": "max",
+						"is_enabled": true
+					},
+					"tablet_extra": {
+						"label": "Tablet Landscape",
+						"value": 1200,
+						"default_value": 1200,
+						"direction": "max",
+						"is_enabled": false
+					},
+					"laptop": {
+						"label": "Laptop",
+						"value": 1366,
+						"default_value": 1366,
+						"direction": "max",
+						"is_enabled": false
+					},
+					"widescreen": {
+						"label": "Widescreen",
+						"value": 2400,
+						"default_value": 2400,
+						"direction": "min",
+						"is_enabled": false
+					}
+				}
+			},
+			"version": "3.14.1",
+			"is_static": false,
+			"experimentalFeatures": {
+				"e_dom_optimization": true,
+				"e_optimized_assets_loading": true,
+				"e_optimized_css_loading": true,
+				"a11y_improvements": true,
+				"additional_custom_breakpoints": true,
+				"e_swiper_latest": true,
+				"landing-pages": true
+			},
+			"urls": {
+				"assets": "https:\/\/medileaves.powersquall.com\/home-4\/wp-content\/plugins\/elementor\/assets\/"
+			},
+			"swiperClass": "swiper",
+			"settings": {
+				"page": [],
+				"editorPreferences": []
+			},
+			"kit": {
+				"active_breakpoints": ["viewport_mobile", "viewport_tablet"],
+				"global_image_lightbox": "yes",
+				"lightbox_enable_counter": "yes",
+				"lightbox_enable_fullscreen": "yes",
+				"lightbox_enable_zoom": "yes",
+				"lightbox_enable_share": "yes",
+				"lightbox_title_src": "title",
+				"lightbox_description_src": "description"
+			},
+			"post": {
+				"id": 6632,
+				"title": "Home%204",
+				"excerpt": "",
+				"featuredImage": false
+			}
+		};
 	</script>
 	<script type='text/javascript' src='wp-content/plugins/elementor/assets/js/frontend.mina1c3.js?ver=3.14.1'
 		id='elementor-frontend-js'></script>
@@ -4433,7 +4796,9 @@
 		id='mptt-functions-js'></script>
 	<script type='text/javascript' id='mptt-event-object-js-extra'>
 		/* <![CDATA[ */
-		var MPTT = { "table_class": "mptt-shortcode-table" };
+		var MPTT = {
+			"table_class": "mptt-shortcode-table"
+		};
 		/* ]]> */
 	</script>
 	<script type='text/javascript' src='wp-content/plugins/mp-timetable/media/js/events/event.min8dff.js?ver=2.4.9'
